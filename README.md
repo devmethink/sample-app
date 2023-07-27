@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Sample App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To run this app:
+- npm install
+* npm start
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+The goal is to create an application that will work exactly the same as the application in this repository, the sample-app.
 
-### `npm start`
+The idea is to split the code into a main repository that communicates with secondary repositories. These secondary repositories contain the code for each module.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You should create a public github project for this application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Create main repository
+Create a repository that will contain the main structure of our application
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/f457caa8-1ac3-40c4-a1ab-030b5b68464b)
 
-### `npm test`
+In this main repository, the AllRoutes.js file should import the contents of each module's repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Create repository for each module
+Create a repository to contain the code of each module, removing the code from the main repository.
 
-### `npm run build`
+Based on the structure of our application, five repositories should be created:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Module1
+* Module2
++ Module3
+- CommonModule1
+* CommonModule2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The import of each module must be done in the AllRoutes.js file.
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/4d2e7325-80af-4eb7-978c-0aa8f1b452db)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Each module will have the possibility to be developed individually. But must be able to access the main repository's AppContext.
 
-### `npm run eject`
+We would like each module's repository to act in a similar way to an npm package. 
+So that with each commit to the module's repository, through a command similar to npm install, we could update our main application hosted in the main repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Create repository for data related functions 
+Create a repository for api connection functions.
+The functionalities inside this repository must be able to be used in any of the repositories.
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/edd3514c-181e-415f-93e4-33eb81ef3fee)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Create repository for helper functions 
+Create a repository for helper functions.
+The functionalities inside this repository must be able to be used in any of the repositories.
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/84e1e97c-f42a-4516-8f62-2c28aab943e8)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Communication with main repository
+Ensure that each module's repository:
+- can access the AppContext present in the main repository;
