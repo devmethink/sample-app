@@ -14,7 +14,8 @@ You should create a public github project for this application.
 
 ### Create main repository
 Create a repository that will contain the main structure of our application
-![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/f457caa8-1ac3-40c4-a1ab-030b5b68464b)
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/a61948f9-4130-4bdc-b890-4738651885ce)
+
 
 In this main repository, the AllRoutes.js file should import the contents of each module's repository.
 
@@ -30,7 +31,8 @@ Based on the structure of our application, five repositories should be created:
 * CommonModule2
 
 The import of each module must be done in the AllRoutes.js file.
-![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/4d2e7325-80af-4eb7-978c-0aa8f1b452db)
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/9ed280ad-6e09-40af-890f-e6971ac58b62)
+
 
 Each module will have the possibility to be developed individually. But must be able to access the main repository's AppContext.
 
@@ -40,12 +42,13 @@ So that with each commit to the module's repository, through a command similar t
 ### Create repository for data related functions 
 Create a repository for api connection functions.
 The functionalities inside this repository must be able to be used in any of the repositories.
-![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/edd3514c-181e-415f-93e4-33eb81ef3fee)
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/2b55048c-6d2c-492a-b4ba-4a6447b08c86)
+
 
 ### Create repository for helper functions 
 Create a repository for helper functions.
 The functionalities inside this repository must be able to be used in any of the repositories.
-![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/84e1e97c-f42a-4516-8f62-2c28aab943e8)
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/ebbc79fc-f51c-4764-a46a-c6765d5e20f4)
 
 
 ### Communication with main repository
