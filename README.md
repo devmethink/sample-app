@@ -23,7 +23,7 @@ In this main app, the AllRoutes.js file should import the contents of each depen
 ### Create repository for each module
 Create a repository for each module. Each new module corresponds to the existing internal module in the current apllication.
 
-Based on the structure of our application, five repositories should be created:
+Based on the structure of our application, five modules should be created:
 
 - Module1
 * Module2
@@ -34,7 +34,6 @@ Based on the structure of our application, five repositories should be created:
 The import of each module must be done in the AllRoutes.js file. 
 
 ![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/9ed280ad-6e09-40af-890f-e6971ac58b62)
-
 
 Each module will have the possibility to be developed individually. But must be able to access the information from other modules such as Context Repository, Data Repository, etc.
 
