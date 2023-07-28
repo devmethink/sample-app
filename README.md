@@ -16,7 +16,7 @@ You should create a public github project for this application.
 ### Create main repository
 Create a repository that will contain the main structure of our application
 
-![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/a61948f9-4130-4bdc-b890-4738651885ce)
+![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/c9c1595a-e995-4549-b3eb-9bc55c7657fb)
 
 
 In this main repository, the AllRoutes.js file should import the contents of each module's repository.
@@ -32,7 +32,7 @@ Based on the structure of our application, five repositories should be created:
 - CommonModule1
 * CommonModule2
 
-The import of each module must be done in the AllRoutes.js file.
+The import of each module must be done in the AllRoutes.js file. 
 
 ![image](https://github.com/carolinaverissimoreis/sample-app/assets/140642257/9ed280ad-6e09-40af-890f-e6971ac58b62)
 
